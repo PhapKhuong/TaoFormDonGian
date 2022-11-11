@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Tạo Form Đơn Giản</title>
-    <!--<style>
-        Bang_1
-        {
-            
-        }
-    </style> -->
 </head>
+    <style>
+        .center{margin: auto; padding-top: 20px; padding-bottom: 20px;}
+    </style>
 <body>
-    <form action="google.com" method="get">
-        <table style="width: 500px;">
+    <form action="google.com" method="get" style="background-color: pink; width: 540px;">
+        <table class="center" style="width: 500px;">
             <tr style="height: 40px;">
                 <td style="color: white; background-color: orangered; text-align: center; font-size: x-large;" colspan="4">
                     SỞ THÍCH CỦA BẠN
@@ -69,6 +66,84 @@
                 <td style="font-size: larger;" colspan="3">
                     <input type="submit" name="submit" style="height: 30px;" value="Gửi thông tin">
                     <input type="reset" name="reset" style="height: 30px;" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="google.com" method="get" style="background-color: yellowgreen; width: 540px;">
+        <p style="font-size: 30px; color: blue; background-color:aquamarine; text-align: left;">ĐĂNG KÝ HỌC VIÊN</p>
+        <table>
+            <tr>
+                <td style="width: 100px;">
+                    <label for="ho_ten">Họ và tên</label>
+                </td>
+                <td style="width: 500px;">
+                    <input type="text" name="hoten" id="ho_ten" style="width: 80%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ngay_sinh">Ngày sinh</label>
+                </td>
+                <td>
+                    <input type="text" name="ngaysinh" id="ngay_sinh" style="width: 30%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Giới tính</label>
+                </td>
+                <td>
+                    <input type="radio" name="gioitinh"> Nam
+                    <input type="radio" name="gioitinh"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Địa chỉ</label>
+                </td>
+                <td>
+                    <textarea style="width: 60%; height: 100px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Lớp</label>
+                </td>
+                <td>
+                    <select>
+                        <option selected>-Chọn lớp-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dia_chi">Email</label>
+                </td>
+                <td>
+                    <input type="text" name="diachi" id="dia_chi" style="width: 50%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dia_chi">Điện thoại</label>
+                </td>
+                <td>
+                    <input type="text" name="dienthoai" id="dien_thoai" style="width: 50%;">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="dangky" value="Đăng ký" style="width: 25%;">
+                    <input type="reset" name="nhaplai" value="Nhập lại" style="width: 25%;">
                 </td>
             </tr>
         </table>
